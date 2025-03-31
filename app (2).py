@@ -9,10 +9,10 @@ import tensorflow.keras.backend as K
 
 
 # Load models
-malaria_model = tf.keras.models.load_model("/content/malariaModel (1).h5")
-heart_model = joblib.load("/content/heart_disease_model.sav")
-diabetes_model = joblib.load("/content/diabetes_model.sav")
-pneumonia_model = tf.keras.models.load_model("/content/model.h5")  
+malaria_model = tf.keras.models.load_model("models/malariaModel.h5")
+heart_model = joblib.load("models/heart_disease_model.sav")
+diabetes_model = joblib.load("models/diabetes_model.sav")
+pneumonia_model = tf.keras.models.load_model("models/pneumonia_model.h5")
 
 IMG_SIZE = 150  # Malaria model expects 150x150 images
 
