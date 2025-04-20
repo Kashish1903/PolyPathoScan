@@ -66,7 +66,8 @@ credentials = {
     }
 }
 authenticator = stauth.Authenticate(credentials, "cookie", "auth", 1)
-name, auth_status, username = authenticator.login("Login", "main")
+name, auth_status, username = authenticator.login(location="main")
+
 
 # ==== Sidebar ====
 with st.sidebar:
