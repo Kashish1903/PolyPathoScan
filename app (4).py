@@ -6,6 +6,7 @@ import pandas as pd
 import csv
 import uuid
 import os
+import requests
 import tensorflow as tf
 import joblib
 import numpy as np
@@ -35,6 +36,15 @@ def local_css():
 local_css()
 
 # ==== Model Loading ====
+MALARIA_MODEL_PATH = "malaria_model.h5"
+MALARIA_MODEL_URL = "https://drive.google.com/uc?id=1DSTFSf9YhuV0_wg7NIP93x-gg2M4lL5u
+
+
+if not os.path.exists(MALARIA_MODEL_PATH):
+    with open(MALARIA_MODEL_PATH, "wb") as f:
+        r = requests.get(MALARIA_MODEL_URL)
+        f.write(r.content)
+
 malaria_model = tf.keras.models.load_model("malaria_model_small.h5")
 heart_model = joblib.load("heart_model.sav")
 diabetes_model = joblib.load("diabetes_model.sav")
