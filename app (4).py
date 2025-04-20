@@ -37,7 +37,7 @@ local_css()
 
 # ==== Model Loading ====
 MALARIA_MODEL_PATH = "malaria_model.h5"
-MALARIA_MODEL_URL = "https://drive.google.com/uc?id=1DSTFSf9YhuV0_wg7NIP93x-gg2M4lL5u
+MALARIA_MODEL_URL = "https://drive.google.com/uc?id=1DSTFSf9YhuV0_wg7NIP93x-gg2M4lL5u"
 
 
 if not os.path.exists(MALARIA_MODEL_PATH):
