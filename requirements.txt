@@ -1,0 +1,9 @@
+streamlit
+streamlit-authenticator
+tensorflow
+scikit-learn
+pandas
+numpy
+pillow
+matplotlib
+fpdf
