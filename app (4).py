@@ -66,12 +66,12 @@ credentials = {
     }
 }
 authenticator = stauth.Authenticate(credentials, "cookie", "auth", 1)
-name, auth_status, username = authenticator.login(location="main")
+name, auth_status, username = authenticator.login("Login Form", location="main")
 
 
 # ==== Sidebar ====
 with st.sidebar:
-    st.image("/content/hospital-logo-clinic-health-care-physician-business-removebg-preview.png", width=50)
+    st.image("hospital-logo-clinic-health-care-physician-business-removebg-preview.png", width=50)
     st.title("PolyPathoScan ")
 
 # ==== PDF Report Generator ====
