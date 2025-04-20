@@ -35,7 +35,7 @@ def local_css():
 local_css()
 
 # ==== Model Loading ====
-malaria_model = tf.keras.models.load_model("malaria_model.h5")
+malaria_model = tf.keras.models.load_model("malaria_model_small.h5")
 heart_model = joblib.load("heart_model.sav")
 diabetes_model = joblib.load("diabetes_model.sav")
 pneumonia_model = tf.keras.models.load_model("pneumonia_model.h5")
